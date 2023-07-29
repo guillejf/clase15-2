@@ -17,6 +17,5 @@ export const getUserByID = async (req, res) => {
 export const createUser = async (req, res) => {
   const user = req.body;
   const result = await userService.saveUser(user);
-
   res.send({ status: 'success', result });
 };
